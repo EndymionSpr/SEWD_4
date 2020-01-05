@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:complexType name="TOsobaNaUczelni">
+    <xs:sequence>
+      <xs:element name="NAZWA" type="TNazwa"/>
+      <xs:element name="ETAT" type="xs:string"/>
+      <xs:element name="ID_ZESP" type="xs:integer"/>
+      <xs:element name="ADRES" type="ADRESType" nillable="true"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ADRESType">
+    <xs:sequence>
+      <xs:element name="KOD" type="xs:string"/>
+      <xs:element name="MIEJSCOWOSC" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TNazwa" mixed="true">
+    <xs:all>
+      <xs:element name="NAZWISKO" type="xs:string" minOccurs="0"/>
+      <xs:element name="IMIE" type="xs:string" minOccurs="0"/>
+      <xs:element name="TYTUL" type="xs:string" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+</xs:schema>

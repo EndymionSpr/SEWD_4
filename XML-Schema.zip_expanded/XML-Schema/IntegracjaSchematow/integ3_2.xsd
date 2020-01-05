@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified" attributeFormDefault="unqualified">
+  . . .
+  <xs:complexType name="TPracownicy">
+    <xs:sequence>
+      <xs:element ref="PRACOWNIK" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TPracownik">
+    <xs:complexContent>
+      <xs:extension base=". . .">
+        <xs:sequence>
+          <xs:element name="ID_SZEFA" type="xs:integer" minOccurs="0"/>
+          <xs:element name="ZATRUDNIONY" type="xs:date"/>
+          <xs:element name="PLACA_POD" type="xs:decimal"/>
+          <xs:element name="PLACA_DOD" type="xs:decimal" minOccurs="0"
+          />
+        </xs:sequence>
+        <xs:attribute name="ID_PRAC" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PRACOWNIK" type="TPracownik"/>
+  <xs:element name="EMPLOYEE" substitutionGroup="PRACOWNIK"/>
+  <xs:element name="ANGESTELLTE" substitutionGroup="PRACOWNIK"/>
+</xs:schema>

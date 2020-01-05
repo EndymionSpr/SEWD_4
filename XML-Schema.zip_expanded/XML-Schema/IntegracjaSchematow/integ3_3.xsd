@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  elementFormDefault="qualified" 
+  attributeFormDefault="unqualified">       
+  . . .
+  <xs:complexType name="TDoktoranci">
+		<xs:sequence>
+			<xs:element ref="DOKTORANT" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+  <xs:complexType name="TDoktorant">
+    <xs:complexContent>
+      <xs:extension base=". . .">
+        <xs:sequence>
+          <xs:element name="ID_PROMOTORA" type="xs:integer"/>
+          <xs:element name="WYNAGRODZENIE" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="ID_DOKT" type="xs:integer"/>
+      </xs:extension>
+    </xs:complexContent>
+	</xs:complexType>
+  <xs:element name="DOKTORANT" type="TDoktorant"/>
+</xs:schema>

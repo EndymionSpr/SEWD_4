@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="qualified" attributeFormDefault="unqualified"
+  targetNamespace="www.pp.pl/prac">
+  <xs:element name="PRACOWNICY">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ROW" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_PRAC" type="xs:string"/>
+              <xs:element name="NAZWISKO" type="xs:string"/>
+              <xs:element name="ETAT" type="xs:string"/>
+              <xs:element name="ID_SZEFA" type="xs:string"
+                minOccurs="0"/>
+              <xs:element name="ZATRUDNIONY" type="xs:string"/>
+              <xs:element name="PLACA_POD" type="xs:string"/>
+              <xs:element name="PLACA_DOD" type="xs:string"
+                minOccurs="0"/>
+              <xs:element name="ID_ZESP" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

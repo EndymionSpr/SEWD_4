@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ZESPOLY xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pp.pl/zesp zesp.xsd" xmlns="www.pp.pl/zesp">
+	<ROW>
+		<ID_ZESP>10</ID_ZESP>
+		<NAZWA>ADMINISTR ACJA</NAZWA>
+		<ADRES>PIOTROWO 3A</ADRES>
+	</ROW>
+	<ROW>
+		<ID_ZESP>20</ID_ZESP>
+		<NAZWA>SYSTEMY ROZPROSZONE</NAZWA>
+		<ADRES>PIOTROWO 3A</ADRES>
+	</ROW>
+	<ROW>
+		<ID_ZESP>30</ID_ZESP>
+		<NAZWA>SYSTEMY EKSPERCKIE</NAZWA>
+		<ADRES>STRZELECK A 14</ADRES>
+	</ROW>
+	<ROW>
+		<ID_ZESP>40</ID_ZESP>
+		<NAZWA>ALGORYTMY</NAZWA>
+		<ADRES>WLODKOWICA 16</ADRES>
+	</ROW>
+	<ROW>
+		<ID_ZESP>50</ID_ZESP>
+		<NAZWA>BA DANIA OPERACYJNE</NAZWA>
+		<ADRES>MIELZYNSKIEGO 30</ADRES>
+	</ROW>
+</ZESPOLY>

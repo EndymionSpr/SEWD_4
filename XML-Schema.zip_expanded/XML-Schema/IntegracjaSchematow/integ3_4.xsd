@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  . . .
+	<xs:element name="OSOBY">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="PRACOWNICY" type=". . ."/>
+				<xs:element name="DOKTORANCI" type=". . ."/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

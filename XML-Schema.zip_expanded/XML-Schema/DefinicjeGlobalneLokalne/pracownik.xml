@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PRACOWNIK ID_PRAC="130" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="pracownicy_gtd.xsd">
+  <NAZWISKO>BRZEZINSKI</NAZWISKO>
+  <ID_SZEFA>100</ID_SZEFA>
+  <ZATRUDNIONY>1968-07-01</ZATRUDNIONY>
+  <PLACA_POD>960.50</PLACA_POD>
+</PRACOWNIK>
