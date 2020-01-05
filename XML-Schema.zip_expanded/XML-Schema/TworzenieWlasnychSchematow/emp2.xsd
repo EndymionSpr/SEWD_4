@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+<xs:element name="PRACOWNICY">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PRACOWNIK" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_PRAC" type="xs:integer"/>
+              
+              <xs:element name="NAZWA" minOccurs="0">
+              	<xs:complexType>
+              		<xs:complexContent>
+              			<xs:extension base="xs:string">
+              				<xs:sequence>
+              					<xs:element name="TYTUL" type="xs:string"/>
+              					<xs:element name="IMIE" type="xs:string" />
+              					<xs:element name="NAZWISKO" type="xs:string"/>
+              				</xs:sequence>
+              			</xs:extension>
+              		</xs:complexContent>
+              	</xs:complexType>
+              </xs:element>
+              
+              <xs:element name="ETAT" type="xs:string"/>
+              <xs:element name="ID_SZEFA" type="xs:integer" minOccurs="0"/>
+              <xs:element name="ZATRUDNIONY" type="xs:date"/>
+              <xs:element name="PLACA_POD" type="xs:decimal"/>
+              <xs:element name="PLACA_DOD" type="xs:decimal" minOccurs="0"/>
+              <xs:element name="ID_ZESP" type="xs:integer"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
